@@ -1,0 +1,66 @@
+1- javascript •
+
+2- node.js (express) •
+	• ORM [Object-Relational Mappers] (sequelize) ◘
+
+3-Web Dev basics ◘
+	• RESTful API's ◘ 
+	• HTTP ◘ (check node file)
+	• cookies
+	• moraha try learn GraphQL for more efficient data fetching 
+	• moraha try learn SOAP, Used in enterprise for its standardization and security
+
+4- nosql db (mongoDB) ◘
+	• moraha try learn sql db (mySQL) ◘
+
+5-Authentification and Authorization (JWT) ◘
+	• OAuth2 for complex scanrios
+
+-------------------------------------------------------
+
+6-Version Control (Github) ◘
+
+7-DevOps CI/CD (Github Actions) ◘
+
+8-Security Best Practices ◘
+	• SSL/TLS ◘
+	• input validation ◘
+	• secure password storage ◘
+	• SQL Injections, XSS, CSRF ◘
+
+9-Logging library to check errors ◘ (winston) (optional)
+
+-------------------------------------------------------
+
+10-Web Servers (Nginx / Apache) ◘ (check l wer9ra)
+
+11-Containerization and Orchestration (Docker) ◘ (check l wer9ra)
+	• moraha try learn Kubernetes ◘
+
+12-Cloud Services (choose between AWS, GCP, Azure) ◘ (bascily, they are services b drahem ymedolk bzef swalf useful, optional to use them or no)
+	- 
+13-Caching (Redis) ◘ (check l wer9ra)
+
+14-Message Brokers (RabbitMQ or Kafka) ◘
+	- bascly routing requests (REST APIs, notifications, web servers, email service) from producer to consumer
+
+15-JS Testing (Mocha or Chai) ◘ (no need to learn it, u can test ur code normaly)
+
+16-Design Patterns (MVC) ◘ (check node file)
+
+17-Continuous Scalability and Performance Optimization of your application ◘ (zid 7ws 3liha when time comes)
+- exp of scalability, kol 3bd t9arih y5alsk, but kon 3ndek 100k person dir course lzm yechroh hekda tedmen drahmek
+
+18-Development Methodologies ◘
+	• Agile principles ◘ (google it, its good when build a project for a customer)
+	• Scrum or Kanban ◘ (same thing li fo9i)
+
+-------------------------------------------------------
+
+19-Soft Skills (problem-solving) •
+
+20-Learning Resources (stay in trend) •
+
+21-Community and Networking
+
+22-Practical Projects •

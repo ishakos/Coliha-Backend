@@ -1,0 +1,30 @@
+-Git: 
+-Version Control system, imagini checkpoints
+-fih historical backups (ez makalh nchre7)
+-so imporatnt for the team developpement, tenjem tzid feature fl project te3kom, tedi copy w t5dem 3liha whdek, ida nj7at w yaccepti team.. tzidha fl projet te3kom bl merge
+-uses command line
+
+-Github
+-uses Git on the cloud, not on the local server unlike Git
+-uses Fork, ay wa7d yenjem yedi copy lel project te3k w ymodifi fih kima yhab
+-useful for project test, kima derna f pfe
+
+◘ Clone:
+-copy ml github link li ye5las b .git, roh l folder te3ak f windows efte7 cmd w dir 'git clone copiedLink'
+
+◘ status, add, commit, push
+-git status ==> ymdlk infos
+-git add file ==> ydiro f staging area
+-git commit -m "message" ==> ydiro f local repo
+-git push remotename branchname ==> ydiro f remote repo
+	-git remote -v (ywerilk remote li 3ndk)
+	-git branch (ywerilk branch li 3ndk)
+
+◘ Collab:
+-Settings then collab, dir asem l person li t5dem m3ah tjih link f email te3o bah yaccepti l invite w twlo kifkif
+
+◘ Pull:
+-nftardo bli person2 added a file fl remote, w nta rak hab tjibo w tdiro f ur local repo: git pull remotename 
+
+
+

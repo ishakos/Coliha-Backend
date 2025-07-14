@@ -1,0 +1,61 @@
+-git.png:
+working directory (l folder li rak t5dem fih)
+git add m3ntha u go to the staging area
+git commit m3ntha u go to the local repo
+git push m3ntha u go from local repo to remote repo
+
+-Clone: (m repo l ur local folder, kima l pull) 
+git clone aLinkTsiboInYourRepo.git ==> he will get that repo into ur local folder
+
+-Difference between pull and clone: 
+git clone : is used to create a local copy of an entire remote repository.
+git pull : is used to update your local repository with the changes from the remote repository, bringing those changes into your current branch
+
+-reset & restore: (l3ks te3 git add)
+supposing that u added a file by mistake into the stage area, how to unstage?
+method1:  git reset head file.txt (old way)
+method2: git restore --staged file.txt (new and better way)
+
+-clean: (delete untracked files)
+git clean -n: ywerilk chkon li rah ytsuprimaw
+git clean -f: confirm the delete
+note: if u wanna save a file dirlo git add
+
+-git branch: ywerilk l branches li 3ndek (master / main)
+-git remote -v: ywerilk l remotes li 3ndek (origin)
+
+-git push remoteName BranchName ==> git push origin main - git push origin master
+push from local repo to remote repo
+note: to push u need to log in ur github acc, mchi li yji yenjem ypushi psq ki t5dem f charika ur repo is private (fl vscode rani mlinkiha)
+note2: ida sra changes ml github, you need to pull the new changes from remote repo to ur local repo before pushing again
+
+-Branches: (chghol copies)
+rak hab tzid feature fl ur project, te5demha f new branch w testiha fih
+git branch newBranch (create new branch)
+git checkout newBranch (move to newBranch)
+git branch -d newBranch (deleted)
+git branch -m newBranchName (current branch renamed)
+
+-Pull Request: (a request to merge your code update to the main project)
+u push ur new code into it ur mesweda branch, mb3d troh l github dir pull request, from your mesweda branch to the master branch, ida galk able to merge (there is no conflict) you can create your pull request.
+to accept the pull request, you must be the admin, go to pull requests and merge the new request or refuse it.
+you can send pull requests to urself either, (from branch1 to branch2)
+
+-Merging: 
+n9olo rak f master branch, git merge branch1 (mergit l branch1 m3a l master, they became one)
+after u merge, u wont need the branch1 so just delete it
+its better to push l remote repo 1st, and create a pull request 
+
+-Gitignore: 
+mwalf tel9a fih node_modules wl env, hdo makalah npushiwhom f repo, files kbar w aslen manst7a9ohomch, tsema ay 3fsa makch habha ektebha da5l gitignore.
+if u wanna ignore a specify file watch video #17
+
+NOT NEEDED (currently):
+-resetting the head (to control the comments li tektebhom when committing) (watch video #16)
+-stash (to hide and store files)
+-Tagging And Releasing (useful for your project releases, v1, v2, v2.1, v3, ...)
+
+OPTIONAL:
+-git configurations (par example, tbdl keywords, colors, to know user data0,...)
+-Aliases
+-SSH Keys

@@ -1,0 +1,39 @@
+◘ GENERAL
+1-git add . (copy and paste the second option when u create new repository)
+	- it will only add the non modified files + the old ones at 1st
+2-git status (to check who needs to be added)
+3-git add .
+4-git commit -m "updated package.json"
+5-git push origin main / git push origin master
+6-npm install gh-pages
+7-go to package.json, above "name" add this =>	
+	"homepage": "http://ishakos.github.io/reponame"
+8-go to package.json, inside scripts, under "start" add these two =>
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -d build",
+9-git add . (again)
+10-git commit -m "updated package.json"
+11-git push origin main
+12-npm run deploy (should say published)
+
+◘ Possible fix your issues:
+-unsupported: $env:NODE_OPTIONS = "--openssl-legacy-provider"
+-React must be in scope JSX: add "import React from "react"
+-if ur gonna deploy b github pages, add inside <Router> and <React.StrictMode> =>
+	basename={process.env.PUBLIC_URL}
+-ProcessError: fatal: a branch named 'gh-pages' already exists: delete node_modules/.cache/gh-pages
+
+◘ HOW TO LINK AN ALREADY CREATED PROJECT TO A NEW REPO
+1-go to githun, create new repo, do not add readme file 
+2-git remote add origin https://github.com/your-username/my-nextjs-project.git
+3-do the GENERAL STEPS
+
+◘ IMPORT A PROJECT FROM GITHUB 
+1-go to ur folder 
+2-git clone https://github.com/ishakos/p.git
+3-a folder named (repo-name) will be created that contains ur project
+4-npm install (in cmd, to install every previous package)
+5-recreate the env file
+
+
+
