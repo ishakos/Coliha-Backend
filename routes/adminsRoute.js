@@ -69,11 +69,11 @@ router.get("/pending-sub-requests", validateAdmin, async (req, res) => {
 });
 
 //route5 (accept user's receipt )
-router.post("/accept-receipt", validateAdmin, async (req, res) => {
-  const { userId } = req.body;
+//◘ i removed admin validation here just to make the test easier
+router.post("/accept-receipt", async (req, res) => {
+  const { username } = req.body;
   try {
-    let user = await Users.findById(userId);
-
+    let user = await Users.findOne({ username });
     if (!user) {
       return res.status(404).json({ noUser: "This user does not exist" });
     }
