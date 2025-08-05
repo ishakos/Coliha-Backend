@@ -63,19 +63,19 @@ The backend part of the Coliha application.
 ## 🚀 Live Version
 This project is already deployed and ready to use:  
 
-• Frontend: [your frontend URL]  
-• Backend API: https://coliha-server.onrender.com  
+- Frontend: [your frontend URL]  
+- Backend API: https://coliha-server.onrender.com  
 
 ---
 
 ## 📦 Running Locally
-git clone https://github.com/yourusername/Coliha-Backend.git  
-cd Coliha-Backend  
-npm install  
+- git clone https://github.com/yourusername/Coliha-Backend.git  
+- cd Coliha-Backend  
+- npm install  
 
 ## 🔧 Environment Variables
 
-Create a `.env` file in the root directory and define the following variables:
+- Create a `.env` file in the root directory and define the following variables:
 
 ```env
 MONGODB_URI=
@@ -92,7 +92,7 @@ ADMIN_PASS1=
 ---
 
 ## 🚀 Usage
-npm start
+- npm start
 
 
 
