@@ -58,8 +58,19 @@ The backend part of the Coliha application.
 ├── config/ 
 ├── index.js
 
+---
+
+## 🚀 Live Version
+This project is already deployed and ready to use:  
+• Frontend: [your frontend URL]  
+• Backend API: https://coliha-server.onrender.com  
 
 ---
+
+## 📦 Running Locally
+git clone https://github.com/yourusername/Coliha-Backend.git  
+cd Coliha-Backend  
+npm install  
 
 ## 🔧 Environment Variables
 
@@ -78,11 +89,6 @@ ADMIN_PASS1=
 ````
 
 ---
-
-## 📦 Installation
-git clone https://github.com/yourusername/Coliha-Backend.git  
-cd Coliha-Backend  
-npm install  
 
 ## 🚀 Usage
 npm start
