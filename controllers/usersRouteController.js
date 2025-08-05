@@ -11,7 +11,7 @@ const { createSheet, deleteSheet } = require("./sheetController");
 const { SECRET1, SECRET3, SECRET4, GMAIL_PASS, GMAIL } = config;
 
 //domain Name
-const DOMAIN = "http://localhost:3000";
+const DOMAIN = "https://coliha.vercel.app";
 
 exports.getEssentialUsers = async (req, res) => {
   try {
