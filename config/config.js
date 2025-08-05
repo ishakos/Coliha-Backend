@@ -12,5 +12,5 @@ module.exports = {
   GMAIL_PASS: process.env.GMAIL_PASS,
   ADMIN1: process.env.ADMIN1,
   ADMIN_PASS1: process.env.ADMIN_PASS1,
-  DOMAIN = "https://coliha.vercel.app";
+  DOMAIN = "https://coliha.vercel.app"
 };
