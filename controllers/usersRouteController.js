@@ -8,10 +8,7 @@ const config = require("../config/config");
 const { createSheet, deleteSheet } = require("./sheetController");
 
 // ENV
-const { SECRET1, SECRET3, SECRET4, GMAIL_PASS, GMAIL } = config;
-
-//domain Name
-const DOMAIN = "https://coliha.vercel.app";
+const { SECRET1, SECRET3, SECRET4, GMAIL_PASS, GMAIL, DOMAIN } = config;
 
 exports.getEssentialUsers = async (req, res) => {
   try {
