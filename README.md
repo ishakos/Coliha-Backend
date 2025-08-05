@@ -18,7 +18,7 @@ The backend part of the Coliha application.
 
 ### ✅ Authentication
 
-- JWT-based authentication with access & refresh tokens.
+- JWT-based authentication with access tokens.
 - Middleware-protected routes.
 - Secure user registration, login, and logout flow.
 - Token validation and expiration handling.
@@ -26,28 +26,26 @@ The backend part of the Coliha application.
 ### 👤 User Management
 
 - Auto-deletion of unverified users after 30 days (via cron job).
-- Role-based access control (Admin, Dispatcher, etc.).
-- Input validation and error handling middleware.
+- Role-based access control (Admin, Client).
 
 ### 📄 Google Sheets Integration
 
 - Uses a **Google Service Account** to read and write to a Google Sheet.
 - Auto-sync orders to the Google Sheet.
-- Manipulate rows programmatically based on system activity.
+- CRUD rows programmatically based on user activity.
 
 ### 🚀 API Endpoints
 
 - RESTful architecture.
 - Organized by resource (`/users`, `/auth`, `/orders`, etc.).
 - Structured with route-level middleware and controller logic.
-- Error handling via centralized middleware.
+- Error handling via centralized middleware (try/catch). 
 
 ### 🧹 Cron Jobs
 
 - Scheduled with `node-cron`.
 - Daily cleanup of:
   - Expired or inactive unverified users.
-  - Optional: old logs, stale tokens, etc.
 
 ---
 
