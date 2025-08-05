@@ -63,7 +63,7 @@ The backend part of the Coliha application.
 ## 🚀 Live Version
 This project is already deployed and ready to use:  
 
-- Frontend: [your frontend URL]  
+- Frontend: https://coliha.vercel.app  
 - Backend API: https://coliha-server.onrender.com  
 
 ---
