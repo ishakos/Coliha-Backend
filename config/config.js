@@ -13,4 +13,5 @@ module.exports = {
   ADMIN1: process.env.ADMIN1,
   ADMIN_PASS1: process.env.ADMIN_PASS1,
   DOMAIN: "https://coliha.vercel.app",
+  GOOGLE_SERVICE_ACCOUNT: process.env.GOOGLE_SERVICE_ACCOUNT
 };
