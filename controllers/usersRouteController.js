@@ -107,6 +107,8 @@ exports.verifyEmail = async (req, res) => {
     if (!user) {
       return res.status(404).json({ noUser: "This user does not exist" });
     }
+    //not working somehow after deploy, will be fixed later
+    /*
     const evSecret = SECRET3 + user.password;
     let verify;
     try {
@@ -117,6 +119,7 @@ exports.verifyEmail = async (req, res) => {
       }
       return res.status(401).json({ invalid: "Invalid or tampered link" });
     }
+    */
     let sheetID;
     try {
       const sheetResponse = await createSheet(user.username, user.email);
@@ -143,7 +146,6 @@ exports.verifyEmail = async (req, res) => {
         },
       }
     );
-    console.log("here");
     return res.status(200).json({ verified: "User Verified" });
   } catch (error) {
     return res.status(500).json({ error: error.message });
