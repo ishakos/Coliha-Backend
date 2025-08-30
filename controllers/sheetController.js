@@ -27,6 +27,7 @@ async function createSheet(username, userEmail) {
 
     return { status: 200, data: { sheetID } };
   } catch (error) {
+    console.log(error);
     return {
       status: 500,
       error: error.message || "Server Error, Could not create the sheet",
