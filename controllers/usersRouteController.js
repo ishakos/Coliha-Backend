@@ -105,32 +105,26 @@ exports.verifyEmail = async (req, res) => {
   try {
     const user = await Users.findOne({ username });
     if (!user) {
-              console.log("0" + "no user");
       return res.status(404).json({ noUser: "This user does not exist" });
     }
-    //not working somehow after deploy, will be fixed later
     const evSecret = SECRET3 + user.password;
     let verify;
     try {
       verify = jwt.verify(token, evSecret);
     } catch (err) {
       if (err.name === "TokenExpiredError") {
-        console.log("1" + err);
         return res.status(401).json({ expired: "Link expired" });
       }
-              console.log("2" + err);
       return res.status(401).json({ invalid: "Invalid or tampered link" });
     }
     let sheetID;
     try {
       const sheetResponse = await createSheet(user.username, user.email);
       if (sheetResponse.status !== 200) {
-        console.log("3" + "sheet err");
         return res.status(500).json({ error: sheetResponse.error });
       }
       sheetID = sheetResponse.data.sheetID;
     } catch (err) {
-      console.log("4" + err);
       return res.status(500).json({ error: err.message });
     }
     const Offer = await Offers.findOne({ title: "Free Trial" });
@@ -151,7 +145,6 @@ exports.verifyEmail = async (req, res) => {
     );
     return res.status(200).json({ verified: "User Verified" });
   } catch (err) {
-    console.log("5" + err);
     return res.status(500).json({ error: err.message });
   }
 };
