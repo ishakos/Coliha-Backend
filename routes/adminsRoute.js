@@ -72,7 +72,6 @@ router.get("/pending-sub-requests", validateAdmin, async (req, res) => {
 //◘ i removed admin validation here just to make the test easier
 router.post("/accept-receipt", async (req, res) => {
   const { username } = req.body;
-  console.log(username);
   try {
     let user = await Users.findOne({ username });
     if (!user) {
